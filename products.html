@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sportswear Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+        }
+        
+        .intro h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        .intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .brand-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .brand-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .brand-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .brand-info {
+            padding: 1.5rem;
+        }
+        
+        .brand-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .brand-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #555;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            margin-top: 1.5rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .brands-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DEEPAK SNEAKERS ZONE</div>
+        <div class="tagline">Authentic Footwear Collection</div>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Premium Sportswear Brands</h2>
+            <p>Discover our exclusive collection of authentic shoes from the world's leading sportswear brands. Each pair is guaranteed 100% original with premium quality and style.</p>
+        </section>
+        
+        <div class="brands-grid">
+            <div class="brand-card" onclick="location.href='nike-collection.html'">
+                <div class="brand-image" style="background-color: #f5f5f5; background-image: url(nike.jpg);"></div>
+                <div class="brand-info">
+                    <h3 class="brand-name">Nike</h3>
+                    <p class="brand-description">Just Do It. Explore our collection of iconic Nike sneakers including Air Max, Air Force 1, and Jordan models.</p>
+                    <a href="nike-collection.html" class="btn">View Collection</a>
+                </div>
+            </div>
+            
+            <div class="brand-card" onclick="location.href='adidas-collection.html'">
+                <div class="brand-image" style="background-color: #f5f5f5; background-image: url(adidas.jpg);"></div>
+                <div class="brand-info">
+                    <h3 class="brand-name">Adidas</h3>
+                    <p class="brand-description">Impossible is Nothing. Discover our range of Adidas Originals, Ultraboost, and Yeezy collaborations.</p>
+                    <a href="adidas-collection.html" class="btn">View Collection</a>
+                </div>
+            </div>
+            
+            <div class="brand-card" onclick="location.href='puma-collection.html'">
+                <div class="brand-image" style="background-color: #f5f5f5; background-image: url(puma.jpg);"></div>
+                <div class="brand-info">
+                    <h3 class="brand-name">Puma</h3>
+                    <p class="brand-description">Forever Faster. Browse our selection of Puma's innovative footwear including RS-X and Suede classics.</p>
+                    <a href="puma-collection.html" class="btn">View Collection</a>
+                </div>
+            </div>
+            
+            <div class="brand-card" onclick="location.href='asics-collection.html'">
+                <div class="brand-image" style="background-color: #f5f5f5; background-image: url(asics.jpg);"></div>
+                <div class="brand-info">
+                    <h3 class="brand-name">ASICS</h3>
+                    <p class="brand-description">Forever Faster. Browse our selection of Puma's innovative footwear including RS-X and Suede classics.</p>
+                    <a href="asics-colllection.html" class="btn">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                
+            </div>
+            <div class="copyright">
+                &copy; 2025, Manage by <a href="index.html" >depaksneakerszone</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

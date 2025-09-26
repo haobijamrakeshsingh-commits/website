@@ -1,0 +1,233 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA UK 10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #333;
+        }
+        
+        .shoes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .shoe-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .shoe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .shoe-image {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .shoe-info {
+            padding: 20px;
+        }
+        
+        .shoe-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .shoe-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #e63946;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>UK 10 (PUMA)</h1>
+    </section>
+    
+    <div class="container">
+        <h2 class="section-title">Featured Shoes</h2>
+        
+        <div class="shoes-grid">
+            <!-- Shoe 1 -->
+            <div class="shoe-card">
+                <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nike Air Max" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Nike Air Max </h3>
+                    <p class="shoe-price">RS.2999.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 2 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0023.jpg" alt="Adidas Ultraboost" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Adidas Ultraboost 21</h3>
+                    <p class="shoe-price">Rs. 3099.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 3 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0021.jpg" alt="Converse Chuck Taylor" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Converse Chuck Taylor All Star</h3>
+                    <p class="shoe-price">Rs 3999.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 4 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0026.jpg" alt="Vans Old Skool" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Vans Old Skool</h3>
+                    <p class="shoe-price">Rs 4099.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 5 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0025.jpg" alt="Puma RS-X" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Puma RS-X Toys</h3>
+                    <p class="shoe-price">$Rs4599.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 6 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0022.jpg" alt="New Balance 990" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">New Balance 990v5</h3>
+                    <p class="shoe-price">Rs 4599.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 7 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0024" alt="Nike Jordan" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Air Jordan 1 Retro High</h3>
+                    <p class="shoe-price">Rs5699.00</p>
+                </div>
+            </div>
+            
+            <!-- Shoe 8 -->
+            <div class="shoe-card">
+                <img src="IMG-20250925-WA0022" alt="Timberland Boots" class="shoe-image">
+                <div class="shoe-info">
+                    <h3 class="shoe-name">Timberland Premium Boots</h3>
+                    <p class="shoe-price">$200.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    
+                    <p>Phone: 6009632173</p>
+                    <p>Address: TERA LUKRAM LEIRAK,FCI ROAD & WANGKHEI LAISHRAM LEIKAI</p>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shoe Collection. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
